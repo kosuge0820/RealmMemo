@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FCE4B3F91C9FD2D500C91165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B3F81C9FD2D500C91165 /* AppDelegate.swift */; };
-		FCE4B3FB1C9FD2D500C91165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B3FA1C9FD2D500C91165 /* ViewController.swift */; };
 		FCE4B3FE1C9FD2D500C91165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4B3FC1C9FD2D500C91165 /* Main.storyboard */; };
 		FCE4B4001C9FD2D500C91165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE4B3FF1C9FD2D500C91165 /* Assets.xcassets */; };
 		FCE4B4031C9FD2D500C91165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4B4011C9FD2D500C91165 /* LaunchScreen.storyboard */; };
 		FCE4B40E1C9FD2D500C91165 /* RealmPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B40D1C9FD2D500C91165 /* RealmPracticeTests.swift */; };
 		FCE4B4191C9FD2D500C91165 /* RealmPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B4181C9FD2D500C91165 /* RealmPracticeUITests.swift */; };
+		FCE4B4271C9FD2E500C91165 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B4261C9FD2E500C91165 /* MainTableViewController.swift */; };
+		FCE4B42E1C9FD33900C91165 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B42D1C9FD33900C91165 /* SearchTableViewController.swift */; };
+		FCE4B4311C9FD38C00C91165 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B4301C9FD38C00C91165 /* Memo.swift */; };
+		FCE4B4331C9FD39700C91165 /* MemoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4B4321C9FD39700C91165 /* MemoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		FCE4B3F51C9FD2D500C91165 /* RealmPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE4B3F81C9FD2D500C91165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCE4B3FA1C9FD2D500C91165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCE4B3FD1C9FD2D500C91165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE4B3FF1C9FD2D500C91165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE4B4021C9FD2D500C91165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		FCE4B4141C9FD2D500C91165 /* RealmPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE4B4181C9FD2D500C91165 /* RealmPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPracticeUITests.swift; sourceTree = "<group>"; };
 		FCE4B41A1C9FD2D500C91165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE4B4261C9FD2E500C91165 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		FCE4B42D1C9FD33900C91165 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		FCE4B4301C9FD38C00C91165 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		FCE4B4321C9FD39700C91165 /* MemoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		FCE4B3F71C9FD2D500C91165 /* RealmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4B42A1C9FD30400C91165 /* Models */,
+				FCE4B4291C9FD30000C91165 /* Views */,
+				FCE4B4281C9FD2EA00C91165 /* Controller */,
 				FCE4B3F81C9FD2D500C91165 /* AppDelegate.swift */,
-				FCE4B3FA1C9FD2D500C91165 /* ViewController.swift */,
 				FCE4B3FC1C9FD2D500C91165 /* Main.storyboard */,
 				FCE4B3FF1C9FD2D500C91165 /* Assets.xcassets */,
 				FCE4B4011C9FD2D500C91165 /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				FCE4B41A1C9FD2D500C91165 /* Info.plist */,
 			);
 			path = RealmPracticeUITests;
+			sourceTree = "<group>";
+		};
+		FCE4B4281C9FD2EA00C91165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4B4261C9FD2E500C91165 /* MainTableViewController.swift */,
+				FCE4B42D1C9FD33900C91165 /* SearchTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FCE4B4291C9FD30000C91165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FCE4B42A1C9FD30400C91165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4B4301C9FD38C00C91165 /* Memo.swift */,
+				FCE4B4321C9FD39700C91165 /* MemoManager.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE4B3FB1C9FD2D500C91165 /* ViewController.swift in Sources */,
+				FCE4B4271C9FD2E500C91165 /* MainTableViewController.swift in Sources */,
+				FCE4B42E1C9FD33900C91165 /* SearchTableViewController.swift in Sources */,
 				FCE4B3F91C9FD2D500C91165 /* AppDelegate.swift in Sources */,
+				FCE4B4311C9FD38C00C91165 /* Memo.swift in Sources */,
+				FCE4B4331C9FD39700C91165 /* MemoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
