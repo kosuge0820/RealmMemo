@@ -52,7 +52,11 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="xdY-R3-bmc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="xdY-R3-bmc">
+                            <connections>
+                                <segue destination="9Hb-4v-KQ8" kind="presentation" id="aJV-ux-fn5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="vpk-Q1-r9k" id="pLi-KB-dx4"/>
