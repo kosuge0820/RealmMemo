@@ -27,11 +27,14 @@ class SearchTableViewController: UITableViewController, UITextFieldDelegate{
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return memoManager.resultArray.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MemoCell", forIndexPath: indexPath)
+        let memo = self.memoManager.resultArray[indexPath.row]
+        cell.textLabel?.text = memo.text
+        cell.detailTextLabel?.text = memo.date
         return cell
     }
     
@@ -52,6 +55,8 @@ class SearchTableViewController: UITableViewController, UITextFieldDelegate{
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        memoManager.searchPosts(textField.text!)
+        self.tableView.reloadData()
         return true
     }
 }
