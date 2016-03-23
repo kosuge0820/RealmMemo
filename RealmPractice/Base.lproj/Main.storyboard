@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4ZT-EB-3Dc" detailTextLabel="9ys-yJ-JXv" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="QDI-u8-bH2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoCell" textLabel="4ZT-EB-3Dc" detailTextLabel="9ys-yJ-JXv" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="QDI-u8-bH2" customClass="MemoCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDI-u8-bH2" id="IkA-vG-uce">
@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="s4x-1m-DkP" detailTextLabel="cgO-ml-vZ7" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="KPV-iq-GM5" customClass="MemoCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoCell" textLabel="s4x-1m-DkP" detailTextLabel="cgO-ml-vZ7" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="KPV-iq-GM5" customClass="MemoCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KPV-iq-GM5" id="lHG-uD-RfI">
