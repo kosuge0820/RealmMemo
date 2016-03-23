@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MemoManager: NSObject {
 
+    static let sharedInstance = MemoManager()
+    var memos: [Memo] = []
 }
