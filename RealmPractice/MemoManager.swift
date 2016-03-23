@@ -18,7 +18,17 @@ class MemoManager: NSObject {
     func addPostCollection(memo: Memo) {
         try! realm.write({ () in
             realm.add(memo)
-            self.memos.insert(memo, atIndex: 1) 
+            self.memos.insert(memo, atIndex: 0)
         })
+    }
+    
+    func fetchPosts(){
+    let allMemos = realm.objects(Memo)
+        for oneMemo in allMemos {
+            let memo = Memo()
+            memo.text = oneMemo["text"] as! String
+            memo.date = oneMemo["date"] as! String
+            self.memos.insert(oneMemo, atIndex: 0)
+        }
     }
 }
