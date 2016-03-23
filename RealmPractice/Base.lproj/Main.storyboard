@@ -113,7 +113,11 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="5mQ-mB-6A1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="5mQ-mB-6A1">
+                            <connections>
+                                <action selector="tapStopButton:" destination="imv-Db-zBy" id="bZu-K0-TM1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="Qd9-3e-Ryy" id="x2Q-8f-DGu"/>

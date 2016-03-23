@@ -13,4 +13,12 @@ class MemoManager: NSObject {
 
     static let sharedInstance = MemoManager()
     var memos: [Memo] = []
+    let realm = try! Realm()
+    
+    func addPostCollection(memo: Memo) {
+        try! realm.write({ () in
+            realm.add(memo)
+            self.memos.insert(memo, atIndex: 1) 
+        })
+    }
 }
