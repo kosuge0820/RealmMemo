@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qZa-Ls-PRM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4ZT-EB-3Dc" detailTextLabel="9ys-yJ-JXv" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="QDI-u8-bH2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoCell" textLabel="4ZT-EB-3Dc" detailTextLabel="9ys-yJ-JXv" rowHeight="83" style="IBUITableViewCellStyleSubtitle" id="QDI-u8-bH2" customClass="MemoCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDI-u8-bH2" id="IkA-vG-uce">
@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="s4x-1m-DkP" detailTextLabel="cgO-ml-vZ7" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="KPV-iq-GM5" customClass="MemoCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoCell" textLabel="s4x-1m-DkP" detailTextLabel="cgO-ml-vZ7" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="KPV-iq-GM5" customClass="MemoCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KPV-iq-GM5" id="lHG-uD-RfI">
@@ -113,7 +113,11 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="5mQ-mB-6A1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="5mQ-mB-6A1">
+                            <connections>
+                                <action selector="tapStopButton:" destination="imv-Db-zBy" id="bZu-K0-TM1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="Qd9-3e-Ryy" id="x2Q-8f-DGu"/>
