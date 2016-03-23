@@ -9,17 +9,22 @@
 import UIKit
 import RealmSwift
 
+
 class MainTableViewController: UITableViewController , UITextFieldDelegate{
     @IBOutlet weak var textField: UITextField!
+
     
     let memoManager = MemoManager.sharedInstance
     var currentDateTime = ""
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         textField.delegate = self
         makeTapGesture()
+        
+        let realm = try! Realm()
+        print(realm.path)
+        memoManager.fetchPosts()
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -64,7 +69,10 @@ class MainTableViewController: UITableViewController , UITextFieldDelegate{
         if textField.text!.isEmpty {
             print("テキスト空")
         } else {
-            
+            let memo = Memo(text: textField.text!, date: currentDateTime)
+            memoManager.addPostCollection(memo)
+            tableView.reloadData()
+            textField.text = ""
         }
         return true
     }
